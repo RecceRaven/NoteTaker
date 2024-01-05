@@ -3,7 +3,7 @@ function loadExistingNotes() {
     .then(response => response.json())
     .then(notes => {
         const notesContainer = document.getElementById('existing-notes');
-        notesContainer.innerHTML = ''; // Clear existing notes
+        notesContainer.innerHTML = ''; 
         
         notes.forEach(note => {
             const noteContainer = document.createElement('div');
@@ -22,15 +22,15 @@ function loadExistingNotes() {
                 displayClickedNoteDetails(clickedNoteId); 
             });
             
-            // Create Bulma delete button
+            // Create delete button
             const deleteButton = document.createElement('button');
-            deleteButton.classList.add('button', 'is-small'); // Add Bulma classes for styling
+            deleteButton.classList.add('button', 'is-small'); 
             deleteButton.innerText = 'Delete';
             deleteButton.dataset.id = note.id;
             deleteButton.addEventListener('click', deleteNote); 
 
             noteContainer.appendChild(noteLink);
-            noteContainer.appendChild(deleteButton); // Append delete button to note container
+            noteContainer.appendChild(deleteButton); 
             notesContainer.appendChild(noteContainer);
         });
     })

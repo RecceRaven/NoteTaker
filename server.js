@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve static files
 app.use(express.static('public'));
 
-// Set up routes here
+// Set up routes 
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
