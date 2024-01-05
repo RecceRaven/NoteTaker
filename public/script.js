@@ -24,7 +24,7 @@ function loadExistingNotes() {
             
             // Create Bulma delete button
             const deleteButton = document.createElement('button');
-            deleteButton.classList.add('button', 'is-danger', 'is-small'); // Add Bulma classes for styling
+            deleteButton.classList.add('button', 'is-small'); // Add Bulma classes for styling
             deleteButton.innerText = 'Delete';
             deleteButton.dataset.id = note.id;
             deleteButton.addEventListener('click', deleteNote); 

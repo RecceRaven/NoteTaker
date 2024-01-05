@@ -4,6 +4,7 @@
     --blue: #0F3460;
     --red: #E94560;
     --bone: #FFE7C1;
+    --green: #03C988;
     background-color: #1A1A2E;
     
 }
@@ -18,7 +19,12 @@ body a {
     line-height: 4;
     font-family: 'Roboto', sans-serif;
     color: #FFE7C1;
+    transition-duration: 200ms;
     
+}
+
+body a:hover {
+    color: #E94560;
 }
 
 #note-title {
@@ -42,15 +48,16 @@ body a {
 }
 
 .title {
-    color:#E94560;
+    color:#03C988;
+    font-weight: lighter;
     
 }
 
-input::placeholder {
+#note-title.input::placeholder {
     color: #FFE7C1;
 }
 
-textarea::placeholder {
+#note-text.textarea::placeholder {
     color: #FFE7C1;
 }
 
@@ -73,13 +80,54 @@ textarea::placeholder {
     font-family: 'Rubik Doodle Shadow', system-ui;
     font-size: 25PX;
     transition-duration: 200ms;
+    font-weight: bold;
 }
 
-a:hover {
+.navbar-link, a.navbar-item:hover {
     background-color: #E94560;
+    color:#FFE7C1;
 }
 
 .footer {
     background-color: #1A1A2E;
     color: #FFE7C1;
+}
+
+#save-note {
+    background-color: #03C988;
+    border-style: none;
+    color: #FFE7C1;
+    transition-duration: 200ms;    
+}
+
+#save-note:hover {
+    background-color: #FFE7C1;
+    color: #03C988;
+    border-style: none;
+}
+
+#clear-form {
+    background-color: #E94560;
+    border-style: none;
+    color: #FFE7C1;
+    transition-duration: 200ms;
+}
+
+#clear-form:hover {
+    background-color: #FFE7C1;
+    color: #E94560;
+    border-style: none;
+}
+
+.button {
+    background-color: #E94560;
+    border-style: none;
+    color: #FFE7C1;
+    transition-duration: 200ms;
+}
+
+.button:hover {
+    background-color: #FFE7C1;
+    color: #E94560;
+    border-style: none;
 }
