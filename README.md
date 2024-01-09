@@ -15,10 +15,10 @@ This project doesn't require any installation. Follow the link in the Additional
 
 ## Screenshots
 
-# Landing
+### Landing
 ![noteTakerLanding](https://github.com/RecceRaven/NoteTaker/assets/149850541/38d8b7c5-8d5c-4e56-ab13-c7d9eef744c2)
 
-# Notes
+### Notes
 ![noteTakerNotes](https://github.com/RecceRaven/NoteTaker/assets/149850541/9e52a7b8-7536-4e3d-a835-e37a5852b05a)
 
 
